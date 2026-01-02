@@ -37,6 +37,25 @@ section {
   margin: 0;
 }
 
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Ocultamos menú por defecto */
+.nav-links {
+  display: none;
+}
+
+/* Menú abierto */
+.nav-links.open {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+
 /* HERO */
 .hero {
   text-align: center;
@@ -58,6 +77,24 @@ button {
   font-size: 1rem;
   border-radius: 4px;
 }
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Ocultamos menú por defecto */
+.nav-links {
+  display: none;
+}
+
+/* Menú abierto */
+.nav-links.open {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
 
 @media (min-width: 768px) {
   /* NAVBAR */
@@ -70,7 +107,15 @@ button {
   .nav-links {
     flex-direction: row;
     gap: 30px;
-  }
+    }
+    
+    .hamburger {
+      display: none;
+    }
+    
+    .nav-links {
+      display: flex;
+    }
 
   /* HERO */
   .hero {
@@ -87,3 +132,4 @@ button {
     margin: 20px auto;
   }
 }
+
