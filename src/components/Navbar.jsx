@@ -17,11 +17,20 @@ function Navbar() {
 
       {/* Menú */}
       <ul className={`nav-links ${open ? "open" : ""}`}>
-        <li onClick={() => setOpen(false)}>Inicio</li>
-        <li onClick={() => setOpen(false)}>Servicios</li>
-        <li onClick={() => setOpen(false)}>Nosotros</li>
-        <li onClick={() => setOpen(false)}>Contacto</li>
-      </ul>
+        <li>
+            <a href="#inicio" onClick={() => setOpen(false)}>Inicio</a>
+        </li>
+        <li>
+            <a href="#servicios" onClick={() => setOpen(false)}>Servicios</a>
+        </li>
+        <li>
+            <a href="#nosotros" onClick={() => setOpen(false)}>Nosotros</a>
+        </li>
+        <li>
+            <a href="#contacto" onClick={() => setOpen(false)}>Contacto</a>
+        </li>
+        </ul>
+
     </nav>
   );
 }
