@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
-
+/* ===================== */
 /* RESET */
+/* ===================== */
 * {
   box-sizing: border-box;
 }
@@ -17,7 +18,9 @@ body {
   color: #1f2933;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 600;
   color: #0a2540;
   margin-bottom: 15px;
@@ -28,13 +31,16 @@ p {
   max-width: 700px;
 }
 
-
+/* ===================== */
 /* SECCIONES */
+/* ===================== */
 section {
   padding: 40px 20px;
 }
 
+/* ===================== */
 /* NAVBAR */
+/* ===================== */
 .navbar {
   position: sticky;
   top: 0;
@@ -45,54 +51,30 @@ section {
   background: #0a2540;
   color: white;
   padding: 15px;
+  transition: opacity 0.3s ease;
 }
 
 .navbar.scrolled {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transform: opacity 0.5s ease;
 }
 
 .navbar h1 {
-  color: white
-}
-
-.navbar a{
   color: white;
 }
 
+.navbar a {
+  color: white;
+}
+
+/* LOGO */
 .logo {
   margin-bottom: 10px;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-    padding: 8px 12px;
-  border-radius: 4px;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.nav-links a:hover {
-  background: rgba(255, 255, 255, 0.15);
-}
-
-.nav-links a:active {
-  background: rgba(255, 255, 255, 0.25);
-}
-
-
-
-.nav-links li {
-  cursor: pointer;
-}
-
-
-.hamburger {
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-/* Ocultamos menú por defecto */
+/* ===================== */
+/* LINKS */
+/* ===================== */
 .nav-links {
   display: flex;
   flex-direction: column;
@@ -101,7 +83,7 @@ section {
   padding: 0;
   margin: 0;
 
-  /* ANIMACIÓN */
+  /* animación */
   max-height: 0;
   overflow: hidden;
   opacity: 0;
@@ -116,9 +98,44 @@ section {
   margin-top: 15px;
 }
 
+.nav-links li {
+  cursor: pointer;
+}
 
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
 
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.nav-links a:active {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ===================== */
+/* HAMBURGER */
+/* ===================== */
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hamburger.open {
+  transform: rotate(90deg);
+}
+
+/* ===================== */
 /* HERO */
+/* ===================== */
 .hero {
   text-align: center;
   padding: 60px 20px;
@@ -128,28 +145,23 @@ section {
   font-size: 1.8rem;
 }
 
-@media (min-width: 768px) {
-  .hero h2 {
-    font-size: 2.6rem;
-  }
-}
-
-
 .hero p {
   font-size: 1rem;
   margin: 15px 0;
 }
 
+/* ===================== */
 /* BOTONES */
+/* ===================== */
 button {
   padding: 12px 20px;
   font-size: 1rem;
   border-radius: 4px;
 }
 
-
-/* Whatsapp Icon */
-
+/* ===================== */
+/* WHATSAPP FLOAT */
+/* ===================== */
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -172,11 +184,10 @@ button {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-
-
+/* ===================== */
+/* DESKTOP */
+/* ===================== */
 @media (min-width: 768px) {
-  /* NAVBAR */
-  @media (min-width: 768px) {
   .navbar {
     flex-direction: row;
     justify-content: space-between;
@@ -189,23 +200,13 @@ button {
     transform: none;
     flex-direction: row;
     gap: 30px;
+    margin-top: 0;
   }
 
-}
-
   .hamburger {
-  font-size: 2rem;
-  cursor: pointer;
-  user-select: none;
-  transition: transform 0.3s ease;
-}
+    display: none;
+  }
 
-.hamburger.open {
-  transform: rotate(90deg);
-}
-
-
-  /* HERO */
   .hero {
     padding: 100px 80px;
   }
@@ -220,4 +221,3 @@ button {
     margin: 20px auto;
   }
 }
-
