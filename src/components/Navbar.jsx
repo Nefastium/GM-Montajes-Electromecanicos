@@ -60,7 +60,7 @@ function Navbar() {
         <li>
           <a
             href="#inicio"
-            className={activeSection === "inicio" ? "active" : ""}
+            className={activeSection === "inicio" ? "" : ""}
             onClick={() => setOpen(false)}
           >
             Inicio
