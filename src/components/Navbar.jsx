@@ -1,36 +1,36 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <h1 className="logo">GM Montajes</h1>
 
-      {/* Botón hamburguesa */}
       <div
-        className="hamburger"
+        className={`hamburger ${open ? "open" : ""}`}
         onClick={() => setOpen(!open)}
       >
         ☰
       </div>
 
-      {/* Menú */}
-      <ul className={`nav-links ${open ? "open" : ""}`}>
-        <li>
-            <a href="#inicio" onClick={() => setOpen(false)}>Inicio</a>
-        </li>
-        <li>
-            <a href="#servicios" onClick={() => setOpen(false)}>Servicios</a>
-        </li>
-        <li>
-            <a href="#nosotros" onClick={() => setOpen(false)}>Nosotros</a>
-        </li>
-        <li>
-            <a href="#contacto" onClick={() => setOpen(false)}>Contacto</a>
-        </li>
-        </ul>
 
+      <ul className={`nav-links ${open ? "open" : ""}`}>
+        <li><a href="#inicio" onClick={() => setOpen(false)}>Inicio</a></li>
+        <li><a href="#servicios" onClick={() => setOpen(false)}>Servicios</a></li>
+        <li><a href="#nosotros" onClick={() => setOpen(false)}>Nosotros</a></li>
+        <li><a href="#contacto" onClick={() => setOpen(false)}>Contacto</a></li>
+      </ul>
     </nav>
   );
 }
