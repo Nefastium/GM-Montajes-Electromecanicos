@@ -114,8 +114,18 @@ section {
   background: rgba(255, 255, 255, 0.15);
 }
 
-.nav-links a:active {
-  background: rgba(255, 255, 255, 0.25);
+.nav-links a.active {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 -2px 0 #ffffff;
+}
+
+.logo {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.logo-full {
+  display: none;
 }
 
 /* ===================== */
@@ -201,6 +211,19 @@ button {
     flex-direction: row;
     gap: 30px;
     margin-top: 0;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .logo-short {
+    display: none;
+  }
+
+  .logo-full {
+    display: inline;
   }
 
   .hamburger {
