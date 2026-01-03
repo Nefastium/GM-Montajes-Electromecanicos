@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-      <h1 className="logo">GM Montajes</h1>
+      <h1 className="logo">GM Montajes Electromecanicos</h1>
 
       <div
         className={`hamburger ${open ? "open" : ""}`}
