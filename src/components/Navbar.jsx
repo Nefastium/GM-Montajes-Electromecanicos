@@ -42,6 +42,8 @@ function Navbar() {
   }, []);
 
   return (
+    <>
+    
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <h1 className="logo">
         <span className="logo-short">GM Montajes</span>
@@ -55,8 +57,8 @@ function Navbar() {
       >
         ☰
       </div>
+
       
-      {open && <div className="menu-overlay" onClick={() => setOpen(false)} />}
 
 
       <ul className={`nav-links ${open ? "open" : ""}`}>
@@ -101,6 +103,8 @@ function Navbar() {
         </li>
       </ul>
     </nav>
+    {open && <div className="menu-overlay" onClick={() => setOpen(false)} />}
+    </>
   );
 }
 
