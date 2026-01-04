@@ -67,6 +67,7 @@ section {
   }
 }
 
+
 .navbar.scrolled {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   transform: opacity 0.5s ease;
@@ -79,6 +80,14 @@ section {
 .navbar a {
   color: white;
 }
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 998;
+}
+
 
 /* LOGO */
 .logo {

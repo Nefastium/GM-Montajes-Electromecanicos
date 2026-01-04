@@ -55,6 +55,9 @@ function Navbar() {
       >
         ☰
       </div>
+      
+      {open && <div className="menu-overlay" onClick={() => setOpen(false)} />}
+
 
       <ul className={`nav-links ${open ? "open" : ""}`}>
         <li>
