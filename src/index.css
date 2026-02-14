@@ -171,8 +171,14 @@ section {
 /* HERO */
 /* ===================== */
 .hero {
+  background-image: url(../images/HeadPng.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   text-align: center;
-  padding: 60px 20px;
+  height: 70vh;
+  padding: 100px 30px;
+  color: white;
 }
 
 .hero h2 {
@@ -183,6 +189,7 @@ section {
   font-size: 1rem;
   margin: 15px 0;
 }
+
 
 /* ===================== */
 /* BOTONES */
