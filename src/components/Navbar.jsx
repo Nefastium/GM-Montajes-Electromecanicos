@@ -68,7 +68,7 @@ function Navbar() {
             className={activeSection === "inicio" ? "" : ""}
             onClick={() => setOpen(false)}
           >
-            Inicio
+            INICIO
           </a>
         </li>
 
@@ -78,7 +78,7 @@ function Navbar() {
             className={activeSection === "servicios" ? "active" : ""}
             onClick={() => setOpen(false)}
           >
-            Servicios
+            SERVICIOS
           </a>
         </li>
 
@@ -88,7 +88,7 @@ function Navbar() {
             className={activeSection === "nosotros" ? "active" : ""}
             onClick={() => setOpen(false)}
           >
-            Nosotros
+            NOSOTROS
           </a>
         </li>
 
@@ -98,7 +98,7 @@ function Navbar() {
             className={activeSection === "contacto" ? "active" : ""}
             onClick={() => setOpen(false)}
           >
-            Contacto
+            CONTACTO
           </a>
         </li>
       </ul>
