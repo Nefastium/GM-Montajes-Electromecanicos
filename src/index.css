@@ -176,7 +176,6 @@ section {
   background-image: url(../images/HeadPng.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   text-align: center;
   height: 90vh;
   padding: 100px 30px;
