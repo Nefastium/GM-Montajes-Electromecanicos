@@ -184,11 +184,14 @@ section {
 
 .hero h2 {
   font-size: 1.8rem;
+  text-shadow: 0px 0px 10px white;
+  font-weight: bold;
 }
 
 .hero p {
   font-size: 1rem;
   margin: 15px 0;
+  text-shadow: 0px 0px 5px black;
 }
 
 .services{
@@ -224,6 +227,7 @@ button {
 /* ===================== */
 .whatsapp-button {
   position: fixed;
+  background-color: rgb(185, 185, 185);
   bottom: 20px;
   right: 20px;
   width: 55px;
@@ -254,10 +258,11 @@ button {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 5px 60px;
+    padding: 10px 60px;
   }
 
   .nav-links {
+    width: auto;
     max-height: none;
     opacity: 1;
     transform: none;

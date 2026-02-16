@@ -1,7 +1,7 @@
 function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/5491158314455"
+      href="https://wa.me/5491158314455?text=Hola! Necesito un presupuesto"
       target="_blank"
       rel="noopener noreferrer"
       className="whatsapp-button"
