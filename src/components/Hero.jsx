@@ -9,7 +9,14 @@ function Hero() {
           Soluciones profesionales en instalaciones eléctricas, montajes y
           mantenimiento doméstico e industrial.
         </p>
-        <button>Solicitar presupuesto</button>
+        <a
+          href="https://wa.me/5491158314455?text=Hola! Necesito un presupuesto"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Contactar por WhatsApp"
+        >
+          <button>Solicitar presupuesto</button>
+        </a>
       </div>
     </section>
   );
