@@ -43,7 +43,8 @@ section {
 /* NAVBAR */
 /* ===================== */
 .navbar {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1000;
   display: flex;
@@ -62,7 +63,7 @@ section {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
-  z-index: 900;
+  z-index: 999;
 }
 
 
@@ -90,14 +91,6 @@ section {
 .navbar a {
   color: white;
 }
-
-
-
-/* LOGO */
-.logo {
-  margin-bottom: 10px;
-}
-
 /* ===================== */
 /* LINKS */
 /* ===================== */
@@ -145,7 +138,9 @@ section {
   transition: 0.5s;
 }
 
+/* LOGO */
 .logo {
+  margin-bottom: 10px;
   font-size: 1.2rem;
   text-align: center;
 }
@@ -186,6 +181,7 @@ section {
   text-align: left;
   color: white;
   text-align: center;
+  z-index: 1;
 }
 
 .hero::before {
@@ -391,9 +387,13 @@ opacity: 0;
 .about{
   margin: 0;
   padding-top: 0;
-  height: 100vh;
   text-align: center;
   background: linear-gradient(180deg, #0a0d12, #00236e);
+  color: white;
+}
+
+.about h3{
+  color: #38bdf8;
 }
 
 .about-title {
@@ -406,18 +406,37 @@ opacity: 0;
   margin-bottom: 70px;
   color: #38bdf8;
   text-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
-  
+}
+
+.about-grid {
+  display: grid;
+}
+
+.about-item{
+
 }
 
 .contact{
   height: 100vh;
   background: linear-gradient(180deg, #00236e, #414141);
+  color: white;
 }
 
 .footer{
-  height: 10vh;
+  height: 15vh;
   margin: 0;
   background: #0a2540;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.footer p{
+  margin: 0;
+  color: white;
+}
+
+.redes-sociales{
+  margin-top: 10px;
 }
 
 
@@ -542,6 +561,7 @@ button {
   color: #ffffff;
   line-height: 1.6;
   }
+
 
   .service-card:hover {
   transform: translateY(-8px) scale(1.02);
