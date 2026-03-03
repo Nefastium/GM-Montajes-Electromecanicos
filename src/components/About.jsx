@@ -1,47 +1,70 @@
 function About() {
   return (
-    <section className="about" id="nosotros">
-        <h2 className="about-title">Sobre GM Montajes</h2>
+    <section className="about-industrial" id="nosotros">
 
-        <div className="about-grid">
+      {/* Encabezado tipo placa técnica */}
+      <div className="about-header">
+        <span className="about-eyebrow">[ EXPERIENCIA Y COMPROMISO ]</span>
+        <h2 className="about-name">Gustavo Marinkovich</h2>
+        <div className="about-line"></div>
+        <p className="about-role">
+          Técnico Electromecánico · Electricista Industrial · +30 Años de Trayectoria
+        </p>
+      </div>
 
-          <div className="about-item">
-            <h3>Quién está detrás de GM Montajes</h3>
+      {/* Layout principal */}
+      <div className="about-layout">
+
+        {/* Columna izquierda - Imagen */}
+        <div className="about-photo">
+          <img 
+            src="/gustavo.jpg" 
+            alt="Gustavo Marinkovich - Técnico Electromecánico"
+          />
+        </div>
+
+        {/* Columna derecha - Ficha técnica */}
+        <div className="about-specs">
+
+          <div className="spec-card">
+            <h3>Experiencia Industrial</h3>
             <p>
-              GM Montajes es liderado por Gustavo Marinkovich, técnico electromecánico
-              y electricista con más de 30 años de experiencia en el sector industrial.
+              Más de tres décadas desarrollando montajes electromecánicos 
+              en entornos industriales, con soluciones adaptadas a cada 
+              proyecto y necesidad técnica.
             </p>
           </div>
 
-          <div className="about-item">
-            <h3>Experiencia y trayectoria</h3>
+          <div className="spec-card">
+            <h3>Enfoque en Seguridad</h3>
             <p>
-              A lo largo de su carrera ha desarrollado trabajos en montajes
-              electromecánicos industriales, garantizando soluciones eficientes,
-              seguras y adaptadas a cada necesidad.
+              Cada trabajo se ejecuta bajo estrictos criterios de seguridad,
+              priorizando la integridad de las instalaciones, los equipos
+              y el personal involucrado.
             </p>
           </div>
 
-          <div className="about-item">
-            <h3>Compromiso con la calidad</h3>
+          <div className="spec-card">
+            <h3>Calidad y Cumplimiento</h3>
             <p>
-              Cada proyecto se ejecuta priorizando la seguridad, la calidad técnica
-              y el cumplimiento de los plazos establecidos, manteniendo estándares
-              profesionales en cada etapa del trabajo.
+              Compromiso real con los plazos establecidos y estándares
+              profesionales que garantizan resultados confiables y duraderos.
             </p>
           </div>
 
-          <div className="about-item">
-            <h3>Dedicación y atención personalizada</h3>
+          <div className="spec-card">
+            <h3>Atención Personalizada</h3>
             <p>
-              Con una dedicación especial al servicio y al detalle, GM Montajes
-              ofrece atención personalizada, acompañando al cliente desde la
-              planificación hasta la finalización de la obra.
+              Acompañamiento directo desde la planificación hasta la 
+              finalización de la obra, ofreciendo asesoramiento técnico
+              claro y preciso en cada etapa.
             </p>
           </div>
 
         </div>
-      </section>
+      </div>
+
+    </section>
   );
 }
 

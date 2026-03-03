@@ -413,8 +413,62 @@ opacity: 0;
   display: grid;
 }
 
-.about-item{
+.about-industrial {
+  background: var(--dark-bg);
+  color: #fff;
+  padding: 120px 8%;
+  position: relative;
+}
 
+.about-eyebrow {
+  color: #00c2ff;
+  letter-spacing: 3px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.about-name {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #ffffff;
+  position: relative;
+}
+
+.about-name::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 2px;
+  margin-top: 18px;
+  background: linear-gradient(90deg, var(--electric-blue), transparent);
+}
+
+.about-line {
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, #00c2ff, transparent);
+  margin: 20px 0;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.spec-card {
+  background: #161a21;
+  padding: 25px;
+  border: 1px solid rgba(0,194,255,0.15);
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+.spec-card:hover {
+  border-color: #00c2ff;
+  transform: translateY(-4px);
 }
 
 .contact{
