@@ -1,4 +1,25 @@
+import { useEffect } from "react";
+
 function About() {
+
+  useEffect(() => {
+    const cards = document.querySelectorAll(".spec-card");
+  
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = `${index * 0.15}s`;
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+  
+    cards.forEach((card) => observer.observe(card));
+  }, []);
+
   return (
     <section className="about-industrial" id="nosotros">
 
