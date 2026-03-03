@@ -40,7 +40,7 @@ function About() {
         <div className="about-photo">
           <div className="photo-wrapper">
             <img 
-              src="/images/Gustavo.png" 
+              src="https://github.com/Nefastium/GM-Montajes-Electromecanicos/blob/main/images/Gustavo.png?raw=true" 
               alt="Gustavo Marinkovich - Técnico Electromecánico"
             />
           </div>
