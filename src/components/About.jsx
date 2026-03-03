@@ -38,16 +38,19 @@ function About() {
 
         {/* Columna izquierda - Imagen */}
         <div className="about-photo">
-          <img 
-            src="/gustavo.jpg" 
-            alt="Gustavo Marinkovich - Técnico Electromecánico"
-          />
+          <div className="photo-wrapper">
+            <img 
+              src="../images/Gustavo.png" 
+              alt="Gustavo Marinkovich - Técnico Electromecánico"
+            />
+          </div>
         </div>
 
         {/* Columna derecha - Ficha técnica */}
         <div className="about-specs">
 
           <div className="spec-card">
+            <span className="card-index">01</span>
             <h3>Experiencia Industrial</h3>
             <p>
               Más de tres décadas desarrollando montajes electromecánicos 
@@ -57,6 +60,7 @@ function About() {
           </div>
 
           <div className="spec-card">
+            <span className="card-index">02</span>
             <h3>Enfoque en Seguridad</h3>
             <p>
               Cada trabajo se ejecuta bajo estrictos criterios de seguridad,
@@ -66,6 +70,7 @@ function About() {
           </div>
 
           <div className="spec-card">
+            <span className="card-index">03</span>
             <h3>Calidad y Cumplimiento</h3>
             <p>
               Compromiso real con los plazos establecidos y estándares
@@ -74,6 +79,7 @@ function About() {
           </div>
 
           <div className="spec-card">
+            <span className="card-index">04</span>
             <h3>Atención Personalizada</h3>
             <p>
               Acompañamiento directo desde la planificación hasta la 
