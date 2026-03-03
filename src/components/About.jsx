@@ -65,7 +65,7 @@ function About() {
             <p>
               Cada trabajo se ejecuta bajo estrictos criterios de seguridad,
               priorizando la integridad de las instalaciones, los equipos
-              y el personal involucrado.
+              y la seguridad vital de las personas.
             </p>
           </div>
 

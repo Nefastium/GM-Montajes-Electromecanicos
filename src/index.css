@@ -249,6 +249,9 @@ section {
 }
 
 .services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   background: linear-gradient(180deg, #132143, #0a0d12);
   color: white;
@@ -539,6 +542,7 @@ opacity: 0;
   padding: 32px;
   border-radius: 18px;
   margin-top: 30px;
+  max-width: 732px;
 
   background: linear-gradient(
     160deg,
@@ -662,7 +666,7 @@ opacity: 0;
   display: flex;
   align-items: center;
   gap: 16px;
-
+  width: 100%;
   padding: 18px;
   margin-bottom: 20px;
 
@@ -716,6 +720,12 @@ opacity: 0;
     0 10px 30px rgba(45,212,255,0.4);
 }
 
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer{
   height: 15vh;
   margin: 0;
@@ -748,11 +758,12 @@ button {
 /* ===================== */
 .whatsapp-button {
   position: fixed;
-  background-color: rgb(185, 185, 185);
+  background-color: rgba(255, 255, 255, 0.26);
   bottom: 20px;
   right: 20px;
   width: 55px;
   height: 55px;
+  padding: 2px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -824,6 +835,7 @@ button {
   }
 
   .services-grid {
+    max-width: 1280px;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -834,6 +846,9 @@ button {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255,255,255,0.1);
   transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   
   /* Animación inicial */
   opacity: 0;
@@ -868,5 +883,25 @@ button {
     grid-template-columns: 1fr 1.2fr;
     gap: 60px;
     margin-top: 60px;
+  }
+
+  .about-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-header::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(
+      circle,
+      rgba(45, 212, 255, 0.15) 0%,
+      rgba(45, 212, 255, 0.05) 40%,
+      transparent 70%
+    );
+    z-index: 0;
   }
 }
