@@ -30,7 +30,7 @@ function Services() {
         <div className="service-card">
           <h3>Instalaciones Domiciliarias</h3>
           <p>
-            Cableado completo, iluminación, enchufes, tableros eléctricos
+            Cableado completo, iluminación, tomacorrientes, tableros eléctricos
             y ampliaciones en viviendas nuevas o remodelaciones.
           </p>
         </div>
