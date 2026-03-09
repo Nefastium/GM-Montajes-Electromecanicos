@@ -176,7 +176,7 @@ section {
 /* HERO */
 /* ===================== */
 .hero {
-  background-image: url(../images/HeadPng.png);
+  background-image: url(../public/images/HeadPng.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
