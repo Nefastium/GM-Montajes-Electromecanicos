@@ -924,25 +924,33 @@ button {
   }
 
   .carousel-window {
+    height: 60vh;
     border-radius: 0;
   }
+
+  .carousel-track{
+    height: 60vh;
+  }
+
   .carousel-btn.left {
     left: 10px;
   }
+
+  .carousel-btn.right {
+    right: 10px;
+  }
   
   .carousel-slide {
+    height: 60vh;
     min-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .carousel-btn.right {
-    right: 10px;
-  }
   .slide-img {
 
-    height: 50vh;
+    height: 58vh;
     width: auto;
   
     object-fit: contain;
