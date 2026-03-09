@@ -634,6 +634,80 @@ opacity: 0;
   pointer-events: none;
 }
 
+.about-gallery {
+  margin-top: 80px;
+}
+
+.carousel {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.carousel-window {
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+}
+.carousel-slide img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+.carousel-btn {
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 26px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s ease;
+}
+
+.carousel-btn.left {
+  left: -20px;
+}
+
+.carousel-btn.right {
+  right: -20px;
+}
+
+.carousel-btn:hover {
+  background: #2dd4ff;
+  color: #0c243d;
+}
+
+.gallery-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.6rem;
+  color: white;
+}
+
 .contact {
   padding: 100px 20px;
   background: linear-gradient(
@@ -786,6 +860,10 @@ button {
 /* DESKTOP */
 /* ===================== */
 @media (min-width: 768px) {
+
+  .carousel-slide img {
+    height: 260px;
+  }
   section {
     scroll-margin-top: 80px;
   }

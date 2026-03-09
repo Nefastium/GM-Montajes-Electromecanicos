@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import GalleryCarousel from "./GalleryCarousel";
 
 function About() {
 
@@ -89,6 +90,14 @@ function About() {
           </div>
 
         </div>
+
+        <div className="about-gallery">
+          <h3 className="gallery-title">
+            Trabajos Realizados
+          </h3>
+          <GalleryCarousel />
+        </div>
+
       </div>
 
     </section>
