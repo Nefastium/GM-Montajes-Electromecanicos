@@ -91,15 +91,15 @@ function About() {
 
         </div>
 
-        <div className="about-gallery">
+        
+
+      </div>
+      <div className="about-gallery">
           <h3 className="gallery-title">
             Trabajos Realizados
           </h3>
           <GalleryCarousel />
-        </div>
-
       </div>
-
     </section>
   );
 }

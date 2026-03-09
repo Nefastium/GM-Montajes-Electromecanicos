@@ -22,7 +22,7 @@ function Contact() {
             <span>📧</span>
             <div>
               <h4>Email</h4>
-              <p>contacto@gmmontajes.com</p>
+              <p>gam.marinkovich@gmail.com</p>
             </div>
           </div>
 

@@ -49,8 +49,12 @@ function GalleryCarousel() {
         <div className="carousel-track" ref={trackRef}>
 
           {images.map((img, i) => (
-            <div className="carousel-slide" key={i}>
-              <img src={img} alt={`Trabajo ${i + 1}`} />
+            <div className="carousel-slide">
+                <div className="slide-bg">
+                <img src={img} alt="" />
+                </div>
+            
+                <img className="slide-img" src={img} alt={`Trabajo`} />
             </div>
           ))}
 
