@@ -1,4 +1,4 @@
-import HeadPng from '../../images/HeadPng.png'
+import HeadPng from '../../public/images/HeadPng.png'
 
 function Hero() {
   return (
