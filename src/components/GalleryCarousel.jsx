@@ -5,11 +5,11 @@ function GalleryCarousel() {
   const trackRef = useRef(null);
 
   const images = [
-    "/images/trabajo1.jpg",
-    "/images/trabajo2.jpg",
-    "/images/trabajo3.jpg",
-    "/images/trabajo4.jpg",
-    "/images/trabajo5.jpg"
+    "/../../images/trabajo1.jpg",
+    "/../../images/trabajo2.jpg",
+    "/../../images/trabajo3.jpg",
+    "/../../images/trabajo4.jpg",
+    "/../../images/trabajo5.jpg"
   ];
 
   const [index, setIndex] = useState(0);
