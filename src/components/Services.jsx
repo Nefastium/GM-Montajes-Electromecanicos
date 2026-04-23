@@ -4,7 +4,7 @@ function Services() {
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    const cards = sectionRef.current.querySelectorAll(".service-card");
+    const cards = sectionRef.current?.querySelectorAll(".service-card") || [];
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -14,7 +14,7 @@ function Services() {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.18 }
     );
 
     cards.forEach((card) => observer.observe(card));
@@ -24,73 +24,58 @@ function Services() {
 
   return (
     <section className="services" id="servicios" ref={sectionRef}>
-      <h2 className="electric-title">¿QUÉ HACEMOS?</h2>
-
-      <div className="services-grid">
-        <div className="service-card">
-          <h3>Instalaciones Domiciliarias</h3>
-          <p>
-            Cableado completo, iluminación, tomacorrientes, tableros eléctricos y ampliaciones en viviendas nuevas o remodelaciones.
-          </p>
-        </div>
-
-        <div className="service-card">
-          <h3>Trabajos Industriales</h3>
-          <p>
-            Instalaciones eléctricas en galpones y talleres,
-            conexión de maquinaria y sistemas trifásicos.
-          </p>
-        </div>
-
-        <div className="service-card">
-          <h3>Mantenimiento y Reparaciones</h3>
-          <p>
-            Diagnóstico y solución de fallas eléctricas,
-            cortocircuitos y actualización de instalaciones antiguas.
-          </p>
-        </div>
-
-        <div className="service-card">
-          <h3>Tableros y Protecciones</h3>
-          <p>
-            Armado e instalación de tableros eléctricos con
-            protecciones seguras según normativa vigente.
+      <div className="services-top">
+        <div>
+          <span className="section-label">SERVICIOS</span>
+          <h2 className="electric-title services-title">
+            Electricidad segura y soluciones claras
+          </h2>
+          <p className="services-copy">
+            Instalaciones, mantenciones y tableros eléctricos con trabajo técnico, ordenado y pensado para tu hogar o tu industria.
           </p>
         </div>
       </div>
 
-      <div className="energy-transition">
-  {/* Tablero eléctrico */}
-  <svg
-    className="bolt-icon"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-  >
-    <path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" />
-  </svg>
+      <div className="services-grid">
+        <div className="service-card">
+          <span>01</span>
+          <h3>Instalaciones domiciliarias</h3>
+          <p>
+            Cableado, iluminación, tomas y tableros para viviendas nuevas o remodelaciones con terminado limpio y seguro.
+          </p>
+        </div>
 
-  {/* Línea de energía */}
-  <div className="energy-line">
-    <div className="energy-flow"></div>
-  </div>
+        <div className="service-card">
+          <span>02</span>
+          <h3>Trabajos industriales</h3>
+          <p>
+            Instalación de redes eléctricas, conexión de maquinaria y sistemas trifásicos para plantas, galpones y talleres.
+          </p>
+        </div>
 
-  {/* Bombilla */}
-  <svg
-    className="bulb-icon"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.8"
-  >
-    <path d="M9 18h6" />
-    <path d="M10 22h4" />
-    <path d="M12 2a7 7 0 0 0-4 12c.5.5 1 1.5 1 2h6c0-.5.5-1.5 1-2a7 7 0 0 0-4-12z" />
-  </svg>
-</div>
+        <div className="service-card">
+          <span>03</span>
+          <h3>Mantenimiento rápido</h3>
+          <p>
+            Diagnóstico y solución de fallas, cortocircuitos y actualizaciones de instalaciones antiguas con respuesta efectiva.
+          </p>
+        </div>
 
+        <div className="service-card">
+          <span>04</span>
+          <h3>Tableros y protecciones</h3>
+          <p>
+            Diseño, armado e instalación de tableros con protecciones y normas vigentes para mayor control y seguridad.
+          </p>
+        </div>
+      </div>
 
+      <div className="services-footer">
+        <div className="services-badge">
+          <span>✓</span>
+          Trabajo ordenado, seguro y sin complicaciones.
+        </div>
+      </div>
     </section>
   );
 }

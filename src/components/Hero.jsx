@@ -1,23 +1,31 @@
-import HeadPng from '../../public/images/HeadPng.png'
+
 
 function Hero() {
   return (
-    <section className="hero" id="inicio"> 
+    <section className="hero" id="inicio">
       <div className="hero-content">
-        <h1>Montajes Electromecánicos</h1>
+        <span className="hero-kicker">Electricista profesional</span>
+
+        <h1>Instalaciones eléctricas seguras y a medida</h1>
+
         <p>
-          Soluciones profesionales en instalaciones eléctricas, montajes y
-          mantenimiento doméstico e industrial.
+          Servicio eléctrico para hogares, comercios e industria, con +30 años de
+          experiencia, trabajo prolijo y cumplimiento de normas.
         </p>
-        <a
-          href="https://wa.me/5491158314455?text=Hola! Necesito un presupuesto"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Contactar por WhatsApp"
-        >
-          <button>Solicitar presupuesto</button>
-        </a>
+
+        <div className="hero-actions">
+          <a
+            href="https://wa.me/5491158314455?text=Hola! Necesito un presupuesto"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contactar por WhatsApp"
+            className="hero-primary-btn"
+          >
+            Pedir presupuesto
+          </a>
+        </div>
       </div>
+
     </section>
   );
 }
